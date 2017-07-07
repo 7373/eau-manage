@@ -1,0 +1,35 @@
+﻿<Window x:Name="window1" x:Class="WpfApplication1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="高校管理系统" Height="350" Width="525" Closing="window1_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="s05.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="517">
+            <MenuItem x:Name="student" Header="学生查询" FontSize="20"  Height="35" Width="95">
+                <MenuItem x:Name="s1" Header="学生成绩按每学年成绩统计" Click="s1_Click" ></MenuItem>
+                <MenuItem x:Name="s2" Header="学生所学课程及学分统计" Click="s2_Click"></MenuItem>
+                <MenuItem x:Name="s3" Header="学生成绩查询" Click="s3_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="courses" Header="课程查询" FontSize="20" Height="35" Width="95">
+                <MenuItem x:Name="c1" Header="学生成绩名次排定" Click="c1_Click"></MenuItem>
+                <MenuItem x:Name="c2" Header="每门课程平均成绩统计" Click="c2_Click"></MenuItem>
+                <MenuItem x:Name="c3" Header="班级课程开设查询" Click="c3_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="teacher" Header="教师查询" FontSize="20">
+                <MenuItem x:Name="t1" Header="教师任课查询" Click="t1_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="add" Header="信息添加" FontSize="20">
+                <MenuItem x:Name="a1" Header="添加学生信息" Click="a1_Click"></MenuItem>
+                <MenuItem x:Name="a2" Header="添加教师信息" Click="a2_Click"></MenuItem>
+                <MenuItem x:Name="a3" Header="输入学生成绩" Click="a3_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Label x:Name="label" Content="欢迎进入高校管理系统！" HorizontalAlignment="Left" Margin="39,106,0,0" VerticalAlignment="Top" FontSize="40" Height="98" Foreground="#FF2F7814"/>
+    </Grid>
+</Window>

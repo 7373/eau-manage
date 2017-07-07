@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplication1.c1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="学生成绩名次排定" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="label" Content="请输入课程号：" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="109,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <Button x:Name="Button" Content="查询" HorizontalAlignment="Left" Margin="170,33,0,0" VerticalAlignment="Top" Width="46" Click="Button_Click"/>
+        <Button x:Name="Button1" Content="返回" HorizontalAlignment="Left" Margin="236,33,0,0" VerticalAlignment="Top" Width="46" Click="Button1_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top" Height="180" Width="292" ItemsSource="{Binding Path=table1}"/>
+        <Label x:Name="label1" Content="请选择学年：" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Rterm" HorizontalAlignment="Left" Margin="92,61,0,0" VerticalAlignment="Top" Width="70" SelectionChanged="Rterm_SelectionChanged"/>
+
+    </Grid>
+</Window>
