@@ -1,1 +1,1 @@
-# eau-manage
+# edu-manage
